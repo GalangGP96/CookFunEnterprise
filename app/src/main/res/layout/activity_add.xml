@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".Add">
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtTambahResep"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="23dp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:text="Tambah Resep"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="30sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtNamaResep"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/edtNamaResep"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="13dp"-->
+        <!--android:text="Nama Resep "-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="20sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtNamaResep"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginEnd="26dp"-->
+        <!--android:layout_marginTop="131dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="input nama resep"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtBahan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/txtNamaResep"-->
+        <!--android:layout_marginTop="213dp"-->
+        <!--android:text="Bahan-bahan"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="20sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtBahan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/txtBahan"-->
+        <!--android:layout_alignStart="@+id/edtNamaResep"-->
+        <!--android:ems="10"-->
+        <!--android:hint="input bahan-bahan"-->
+        <!--android:inputType="textMultiLine" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtFoto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignStart="@+id/txtNamaResep"-->
+        <!--android:layout_marginBottom="204dp"-->
+        <!--android:text="Foto"-->
+        <!--android:textColor="@android:color/white"-->
+
+        <!--android:textSize="20sp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnUpload"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="187dp"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:text="Upload"-->
+        <!--android:textSize="18sp" />-->
+
+    <FrameLayout
+        android:id="@+id/fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navbar_botom"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navbar_botom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:background="?android:attr/windowBackground"/>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@android:color/white">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgHome1"-->
+            <!--android:layout_width="86dp"-->
+            <!--android:layout_height="51dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:srcCompat="@drawable/home" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgLove1"-->
+            <!--android:layout_width="82dp"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="104dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:srcCompat="@drawable/love"-->
+            <!--tools:layout_editor_absoluteX="95dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgAdd1"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="102dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:srcCompat="@drawable/addd"-->
+            <!--tools:layout_editor_absoluteX="198dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgProfil1"-->
+            <!--android:layout_width="76dp"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="12dp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:srcCompat="@drawable/profil"-->
+            <!--tools:layout_editor_absoluteX="292dp" />-->
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

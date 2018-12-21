@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoPemilik"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_person_outline_black_24dp"/>
+
+            <TextView
+                android:id="@+id/namaPemilik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aa"
+                android:textSize="18sp"
+                android:textColor="@color/Black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fotoResep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/layoutTop"/>
+
+        <LinearLayout
+            android:id="@+id/layoutBotom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/fotoResep"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <TextView
+                android:id="@+id/JudulResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nasi Goreng"
+                android:textColor="@color/JudulResep"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/deskripsiResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/random"
+                android:textColor="@color/Black"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/waktuResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 mins ago"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

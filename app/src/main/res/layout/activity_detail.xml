@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detail">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/detail_fotoResep"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/klepon"
+                android:contentDescription="coba"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title=" "
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/detail_namaResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bakwan kriuk"
+                android:textColor="@color/JudulResep"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/detail_detailResep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_namaResep"
+                android:textSize="16sp"
+                android:textColor="@color/Black"
+                android:layout_marginBottom="10dp"
+                android:text="cc"/>
+
+            <LinearLayout
+                android:id="@+id/layoutUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_detailResep"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/detail_fotoPenulis"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"/>
+
+                <TextView
+                    android:id="@+id/detail_namaPenulis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:text="nita"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lblBahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutUser"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Bahan-bahan"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerBahan"
+                android:layout_below="@+id/lblBahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/lblLangkah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerBahan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Langkah"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerLangkah"
+                android:layout_below="@+id/lblLangkah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"    >
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
